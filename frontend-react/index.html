@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Suppresses the Referer header on the Google Fonts request below (and
+         anything else) — without this, the cross-domain login handoff's
+         ?t=<token>&u=<user> query params would leak to Google via Referer
+         before React ever mounts to strip them from the URL. -->
+    <meta name="referrer" content="same-origin" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Admin Dashboard – SmartHostel</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
